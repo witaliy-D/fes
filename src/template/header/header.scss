@@ -1,0 +1,64 @@
+.header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 50;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: size(10);
+    padding-top: size(24);
+    padding-bottom: size(24);
+
+    @include media(xs) {
+      flex-direction: row;
+    }
+  }
+
+  &__contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    color: #ffffff;
+  }
+
+  &__link {
+    padding: 0;
+    padding-bottom: 3px;
+    border: 0;
+    line-height: 1.375;
+    color: $color-thridary;
+    position: relative;
+    transition:  $td;
+
+    &:before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      border-bottom: 1px dashed currentColor;
+    }
+
+    @media (pointer: fine) {
+        &:hover {
+            color: $color-primary;
+        }
+        &:active {
+            color: $color-primary-active;
+        }
+    }
+    &:active {
+        color: $color-primary-active;
+    }
+  }
+}
+
+.phone {
+  display: flex;
+  align-items: center;
+  gap: size(8);
+}

@@ -1,0 +1,11 @@
+import "../../pages/main/intro/intro.js";
+import "../../pages/main/subject/subject.js";
+import "../../pages/main/cat-form/cat-form.js";
+import "../../pages/main/category/category.js";
+import "../../pages/main/price/price.js";
+import "../../pages/main/process/process.js";
+import "../../pages/main/about/about.js";
+import "../../pages/main/services/services.js";
+import "../../pages/main/partner/partner.js";
+import "../../pages/main/question-form/question-form.js";
+import "../../pages/main/map-content/map-content.js";

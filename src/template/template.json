@@ -1,0 +1,13 @@
+{
+    //"menu-modal": ["menu-modal", "menu-toggle:style"],
+    "header": "header",
+    "footer": "footer",
+    "modal": [
+        "modal-form:folder",
+        //"modal-quiz:folder",
+        //"modal-item:folder"
+        //"modal-video:folder"
+    ]
+    //"preloader": "preloader"
+}
+

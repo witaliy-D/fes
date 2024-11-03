@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <title>main</title>
+  <link  rel="shortcut icon" type="image/x-icon" href="favicon/favicon.ico">
+
+  <link rel="stylesheet" type="text/css" href="css/dist/swiper-bundle.min.css">
+  <link rel="stylesheet" type="text/css" href="css/dist/fancybox.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<body data-scroll-offset>
+
+  <div class="wrapper">
+    <header id="header" class="header" data-scroll-offset>
+  <div class="container-full mw-1660">
+    <div class="header__inner">
+      <a href="/" class="logo">
+        <img src="images/global/logo.svg" alt="Logo">
+      </a>
+      <div class="header__contact">
+        <a href="tel:+74952480368" class="phone link-decor mb-4 t:600">
+          <svg viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"
+            class="icon t:size-27 t:size-36@lg ">
+            <path
+              d="M24.5 19.1567V23.282C24.5001 23.5774 24.3882 23.8618 24.1869 24.0779C23.9855 24.294 23.7097 24.4257 23.415 24.4463C22.9052 24.4813 22.4887 24.5 22.1667 24.5C11.8568 24.5 3.5 16.1432 3.5 5.83333C3.5 5.51133 3.5175 5.09483 3.55367 4.585C3.57434 4.29035 3.70601 4.01451 3.9221 3.81314C4.1382 3.61177 4.42263 3.49987 4.718 3.5H8.84333C8.98805 3.49985 9.12765 3.5535 9.23502 3.65052C9.34239 3.74755 9.40986 3.88101 9.42433 4.025C9.45117 4.29333 9.47567 4.50683 9.499 4.669C9.73086 6.28708 10.206 7.8608 10.9083 9.33683C11.0192 9.57017 10.9468 9.849 10.7368 9.99833L8.21917 11.7973C9.75853 15.3842 12.617 18.2426 16.2038 19.782L18.0005 17.269C18.0739 17.1663 18.1811 17.0927 18.3032 17.0609C18.4254 17.0292 18.5549 17.0413 18.669 17.0952C20.1448 17.7962 21.7182 18.2702 23.3357 18.501C23.4978 18.5243 23.7113 18.5488 23.9773 18.5757C24.1211 18.5904 24.2543 18.658 24.3511 18.7653C24.4479 18.8727 24.5002 19.0121 24.5 19.1567Z"
+              fill="#02DA72" />
+          </svg>
+          <span class="t:size-27 t:size-35@lg font-thirdary  lh-120">+7(495) 248-03-68</span>
+        </a>
+        <button type="button" class="header__link" data-trigger="#modal-form, modalOpen">
+          Получить консультацию
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+
+    <section id="intro" class="intro">
+  <div class="container">
+    <div class="intro__inner">
+      <h1 class=" title title--size-xl mb-18 color-white t:center mw-1020 m:center-x t:600">
+        Категорирование помещений по взрывопожарной и пожарной опасности
+      </h1>
+      <p class="t:center t:600 t:size-17 t:size-22@md lh-135 mb-30">Дистанционное выполнение работ от 1 дня с бесплатной доставкой документов</p>
+      <div class="intro__btns">
+        <button type="button" class="btn btn--theme-blur btn-primary btn-primary--md intro__btn" data-trigger="#modal-form, modalOpen">
+          <span>Оставить заявку</span>
+        </button>
+        <a href="#" class="btn btn--theme-secondary btn-primary btn-primary--md intro__btn">Другие услуги</a>
+      </div>
+      <div class="intro__items">
+        <div class="intro__item">
+          <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M24 44.0001C35.0457 44.0001 44 35.0458 44 24.0001C44 12.9544 35.0457 4.00006 24 4.00006C12.9543 4.00006 4 12.9544 4 24.0001C4 35.0458 12.9543 44.0001 24 44.0001Z"
+              fill="#00912C" />
+            <path d="M24 12V23.875C24 24.2202 24.2798 24.5 24.625 24.5H31.5" stroke="white" stroke-width="2.5"
+              stroke-linecap="round" />
+          </svg>
+          <span class="t:uppercase t:size-20 font-thirdary lh-120 mb-8 t:600">СРОКИ</span>
+          <span class="lh-137">Профессионально, точно и в срок от 1 до 3 дней</span>
+        </div>
+        <div class="intro__item">
+          <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M42.3768 16.0075C42.2524 15.9999 42.1168 16 41.9762 16L41.9412 16H36.4298C31.887 16 28 19.4721 28 24C28 28.5278 31.887 32 36.4298 32H41.9412H41.9762C42.1168 32 42.2524 32 42.3768 31.9924C44.222 31.8794 45.854 30.4772 45.9912 28.5188C46.0002 28.3904 46 28.252 46 28.1238V28.0888V19.9111V19.8763C46 19.748 46.0002 19.6096 45.9912 19.4812C45.854 17.5228 44.222 16.1207 42.3768 16.0075ZM35.9412 26.1334C37.1108 26.1334 38.0588 25.1782 38.0588 24C38.0588 22.8218 37.1108 21.8666 35.9412 21.8666C34.7716 21.8666 33.8236 22.8218 33.8236 24C33.8236 25.1782 34.7716 26.1334 35.9412 26.1334Z"
+              fill="#006820" />
+            <path
+              d="M35.9412 26.1334C37.1108 26.1334 38.0588 25.1782 38.0588 24C38.0588 22.8218 37.1108 21.8666 35.9412 21.8666C34.7716 21.8666 33.8236 22.8218 33.8236 24C33.8236 25.1782 34.7716 26.1334 35.9412 26.1334Z"
+              fill="white" />
+            <path
+              d="M42.2788 16.003C42.2788 13.6418 42.193 11.1089 40.6836 9.29316C40.5378 9.11788 40.3828 8.94768 40.2176 8.78248C38.7208 7.28576 36.8228 6.62152 34.478 6.30628C32.1996 5.99994 29.2884 5.99998 25.6128 6H21.3872C17.7117 5.99998 14.8004 5.99994 12.522 6.30628C10.1771 6.62152 8.27922 7.28576 6.78248 8.78248C5.28576 10.2792 4.62152 12.1771 4.30628 14.522C3.99994 16.8004 3.99998 19.7116 4 23.3872V23.6128C3.99998 27.2884 3.99994 30.1996 4.30628 32.478C4.62152 34.8228 5.28576 36.7208 6.78248 38.2176C8.27922 39.7142 10.1771 40.3784 12.522 40.6938C14.8004 41 17.7116 41 21.387 41H25.6128C29.2884 41 32.1996 41 34.478 40.6938C36.8228 40.3784 38.7208 39.7142 40.2176 38.2176C40.6266 37.8084 40.974 37.3688 41.2692 36.8972C42.1702 35.4582 42.2788 33.6946 42.2788 31.997C42.1824 32 42.0808 32 41.9764 32H36.4298C31.887 32 28 28.5278 28 24C28 19.4721 31.887 16 36.4298 16H41.9762C42.0806 16 42.1824 15.9999 42.2788 16.003Z"
+              fill="#00912C" />
+            <path
+              d="M12.5 29.5C12.5 30.3284 13.1716 31 14 31C14.8284 31 15.5 30.3284 15.5 29.5V17.5C15.5 16.6716 14.8284 16 14 16C13.1716 16 12.5 16.6716 12.5 17.5V29.5Z"
+              fill="white" />
+          </svg>
+          <span class="t:uppercase t:size-20 font-thirdary lh-120 mb-8 t:600">Стоимость</span>
+          <span class="lh-137">Лучшие цены среди конкурентов</span>
+        </div>
+        <div class="intro__item">
+          <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_178_1106)">
+              <path
+                d="M24 18H12C10.8954 18 10 18.8954 10 20C10 21.0257 10.7721 21.871 11.7668 21.9865L12 22H24C25.1046 22 26 21.1046 26 20C26 18.9743 25.2279 18.129 24.2332 18.0135L24 18Z"
+                fill="white" />
+              <path
+                d="M16 26H12C10.8954 26 10 26.8954 10 28C10 29.1046 10.8954 30 12 30H16C17.1046 30 18 29.1046 18 28C18 26.8954 17.1046 26 16 26Z"
+                fill="white" />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M44 12C44 9.79086 42.2092 8 40 8H8C5.79086 8 4 9.79086 4 12V36C4 38.2092 5.79086 40 8 40H30V34.0002C28.7466 32.3304 28 30.2508 28 28C28 22.4772 32.4772 18 38 18C40.2512 18 42.3286 18.7439 44 19.9993V12ZM12 26H16C17.1046 26 18 26.8954 18 28C18 29.1046 17.1046 30 16 30H12C10.8954 30 10 29.1046 10 28C10 26.8954 10.8954 26 12 26ZM12 18H24L24.2332 18.0135C25.2279 18.129 26 18.9743 26 20C26 21.1046 25.1046 22 24 22H12L11.7668 21.9865C10.7721 21.871 10 21.0257 10 20C10 18.8954 10.8954 18 12 18Z"
+                fill="#00912C" />
+              <path
+                d="M38 22C41.3138 22 44 24.6862 44 28C44 29.777 43.2276 31.3736 42 32.4722V42.382C42 43.1254 41.2176 43.6088 40.5528 43.2764L38 42L35.4472 43.2764C34.7824 43.6088 34 43.1254 34 42.382V32.4722C32.7726 31.3736 32 29.777 32 28C32 24.6862 34.6862 22 38 22Z"
+                fill="white" />
+            </g>
+            <defs>
+              <clipPath id="clip0_178_1106">
+                <rect width="48" height="48" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+          <span class="t:uppercase t:size-20 font-thirdary lh-120 mb-8 t:600">ОДОБРЕНО МЧС</span>
+          <span class="lh-137">Работаем согласно всем нормативным документам</span>
+        </div>
+        <div class="intro__item">
+          <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M6.75504 10.1648C6 11.2406 6 14.4381 6 20.8334V23.9828C6 35.2588 14.4779 40.731 19.7971 43.0546C21.24 43.6848 21.9614 44 24 44C26.0386 44 26.76 43.6848 28.2028 43.0546C33.522 40.731 42 35.2588 42 23.9828V20.8334C42 14.4381 42 11.2406 41.245 10.1648C40.49 9.08908 37.4834 8.05992 31.4702 6.00158L30.3246 5.60944C27.19 4.53648 25.6228 4 24 4C22.3772 4 20.81 4.53648 17.6754 5.60944L16.5298 6.00158C10.5166 8.05992 7.51006 9.08908 6.75504 10.1648Z"
+              fill="#00912C" />
+            <path
+              d="M30.119 20.999C30.6706 20.381 30.617 19.4329 29.999 18.8811C29.381 18.3294 28.4328 18.383 27.8812 19.001L21.8572 25.7478L20.119 23.801C19.5672 23.183 18.6189 23.1294 18.001 23.6812C17.383 24.2328 17.3294 25.181 17.8811 25.799L20.7382 28.999C21.0228 29.3178 21.4298 29.5 21.8572 29.5C22.2844 29.5 22.6914 29.3178 22.976 28.999L30.119 20.999Z"
+              fill="white" />
+          </svg>
+          <span class="t:uppercase t:size-20 font-thirdary lh-120 mb-8 t:600">ГАРАНТИЯ</span>
+          <span class="lh-137">При прохождении проверки МЧС</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="subject" class="subject wow fadeIn">
+    <div class="container">
+        <h2 class="subject__title title title--size-sm color-thridary t:600 mb-16">Какие помещения подлежат категорированию?</h2>
+        <p class="t:size-17 t:size-20@lg lh-155 mw-780 mb-32">
+          СП 12.1130.2009 “Определение категорий помещений, зданий и наружных установок по взрывопожарной и пожарной опасности”
+        </p>
+        <div class="subject__items">
+          <div class="subject__item">
+            <div class="subject__item-img adaptive-box">
+              <img src="images/subject/1.jpg" alt="image" class="adaptive-box__image">
+            </div>
+            <span class="item t:600 font-thirdary mb-16 t:size-21 t:size-30@lg color-black">Складские помещения</span>
+            <p class="t:size-16 t:size-18@lg mb-24">
+              Помещения для хранения, книгохранилища, автостоянки, архивы, гаражи, кладовые, подсобные помещения, помещения
+              мусоросборников, склады, хранилища и т. п.
+            </p>
+            <button type="button" class="btn btn--theme-thridary btn-primary btn-primary--smm"
+              data-trigger="#modal-form, modalOpen">
+              Оставить заявку
+            </button>
+          </div>
+          <div class="subject__item">
+            <div class="subject__item-img adaptive-box">
+              <img src="images/subject/2.jpg" alt="image" class="adaptive-box__image">
+            </div>
+            <span class="item t:600 font-thirdary mb-16 t:size-21 t:size-30@lg color-black">Производственные помещения</span>
+            <p class="t:size-16 t:size-18@lg mb-24">
+              Насосные, лаборатории, мастерские, помещения трубопроводов, серверные, стерилизационные, технические помещения, цехи,
+              электрощитовые, котельные и т.п.
+            </p>
+            <button type="button" class="btn btn--theme-thridary btn-primary btn-primary--smm"
+              data-trigger="#modal-form, modalOpen">
+              Оставить заявку
+            </button>
+          </div>
+        </div>
+    </div>
+</section>
+
+<section id="cat-form" class="cat-form wow zoomIn">
+    <div class="container">
+      <div class="cat-form__items">
+        <div class="cat-form__content">
+          <h3 class="title title--size-sm mb-24 t:600 lh-105">
+            Сомневаетесь, нужно ли категорировать ваш объект?
+          </h3>
+          <p class="t:size-16 t:size-18@lg lh-144 mb-32">
+            Оставьте заявку, мы всегда готовы помочь и ответить на все возникающие вопросы!
+          </p>
+
+          <div class="cat-form__inner">
+            <form action="">
+              <div class="">
+                <input class="form-field__input" placeholder="Ваше имя" type="text" name="yourname" required="">
+              </div>
+
+              <div class="">
+                <input class="form-field__input" placeholder="+7 999-888-77-66" type="tel" name="phone" required="">
+              </div>
+
+              <div class="form-send mb-16">
+                <button type="submit" class="btn btn--theme-blur btn-primary btn-primary--xs">
+                  <span>Оставить заявку</span>
+                </button>
+              </div>
+            </form>
+            <p class="t:size-12 lh-135 mb-0">Нажимая на кнопку «Оставить заявку» вы соглашаетесь с
+              <a href="#" class="color-green t:600 link--line">политикой конфиденциальности</a>
+            </p>
+          </div>
+
+
+        </div>
+        <div class="cat-form__img">
+          <img src="images/cat-form/cat.png" alt="image">
+        </div>
+      </div>
+    </div>
+</section>
+
+<section id="category" class="category wow fadeIn">
+    <div class="container">
+      <div class="category__items">
+        <div class="category__item-title">
+          <h2 class="category__title title title--size-sm color-thridary t:600">Какие существуют категории?</h2>
+        </div>
+        <div class="category__item">
+          <span class="item title title--size-sm t:600 color-primary mb-16">A</span>
+          <p>
+            Повышенная взрывопожароопасность. Наличие горючих газов и жидких веществ, которые легко воспламеняются (температура
+            воспламенения – не больше 28 градусов).
+          </p>
+        </div>
+        <div class="category__item">
+          <span class="item title title--size-sm t:600 color-primary mb-16">Б</span>
+          <p>
+            Взрывопожароопасность. Помещения, в которых хранят горючие волокна, а также легковоспламеняющиеся жидкости. Наличие
+            пыли, которая имеет свойство гореть при определенных условиях.
+          </p>
+        </div>
+        <div class="category__item">
+          <span class="item title title--size-sm t:600 color-primary mb-16">В1-В4</span>
+          <p>
+            Пожароопасность. Наличие в помещении твердых веществ либо жидкостей, способных только гореть контактируя с кислородом,
+            водой или же друг с другом.
+          </p>
+        </div>
+        <div class="category__item">
+          <span class="item title title--size-sm t:600 color-primary mb-16">Г</span>
+          <p>
+            Умеренная опасность пожара. Хранение и использование негорючих материалов, которые находятся в расплавленном или
+            разогретом виде.
+          </p>
+        </div>
+        <div class="category__item">
+          <span class="item title title--size-sm t:600 color-primary mb-16">Д</span>
+          <p>
+            Пониженная пожароопасность. Негорючие вещества и материалы в холодном состоянии.
+          </p>
+        </div>
+      </div>
+    </div>
+</section>
+
+<section id="price" class="price wow fadeIn">
+    <div class="container">
+        <h2 class="price__title title title--size-sm t:600 color-thridary mb-21">Цена на категорирование помещений</h2>
+        <p class="lh-155 t:size-17 t:size-20@lg mw-780 m:center-x mb-40">
+          Стоимость расчета категорий помещений вашего объекта будет зависеть
+          от количества помещений, их площади, конструктивных особенностей.
+        </p>
+        <div class="price__items mb-40">
+          <div class="price__item active">
+            <span class="item t:size-17 t:size-20@lg lh-135 mb-24">До 5 помещений</span>
+            <span class="price__info">от 2 500 ₽</span>
+            <button type="button" class="btn btn--theme-thridary btn-primary btn-primary--smm"
+              data-trigger="#modal-form, modalOpen">
+              Оставить заявку
+            </button>
+          </div>
+          <div class="price__item">
+            <span class="item t:size-17 t:size-20@lg lh-135 mb-24">До 10 помещений</span>
+            <span class="price__info">от 2 300 ₽</span>
+            <button type="button" class="btn btn--theme-thridary btn-primary btn-primary--smm"
+              data-trigger="#modal-form, modalOpen">
+              Оставить заявку
+            </button>
+          </div>
+          <div class="price__item">
+            <span class="item t:size-17 t:size-20@lg lh-135 mb-24">До 20 помещений</span>
+            <span class="price__info">от 2 000 ₽</span>
+            <button type="button" class="btn btn--theme-thridary btn-primary btn-primary--smm"
+              data-trigger="#modal-form, modalOpen">
+              Оставить заявку
+            </button>
+          </div>
+          <div class="price__item">
+            <span class="item t:size-17 t:size-20@lg lh-135 mb-24">Более 20 помещений</span>
+            <span class="price__info">Договорная</span>
+            <button type="button" class="btn btn--theme-thridary btn-primary btn-primary--smm"
+              data-trigger="#modal-form, modalOpen">
+              Оставить заявку
+            </button>
+          </div>
+        </div>
+        <p class="lh-150">
+          Уточнить актуальные цены для вашего объекта вы можете у наших специалистов. <br>
+          Звоните <a href="tel:+74952480368" class="color-primary link-decor">+7 (495) 248-03-68</a>
+        </p>
+    </div>
+</section>
+
+<section id="process" class="process wow fadeIn">
+    <div class="container">
+      <div class="process__items">
+        <div class="process__item process__item-1">
+          <h2 class="process__title title title--size-sm t:600 color-thridary mb-40">Процесс выполнения работ по категорированию</h2>
+          <ul class="process__list">
+            <li>
+              <span class="process__icon">1</span>
+              Мы высылаем Вам таблицу для заполнения информации о помещениях (либо выезжает наш специалист);
+            </li>
+            <li>
+              <span class="process__icon">2</span>
+              После заполнения таблицы мы готовим техническое заключение;
+            </li>
+            <li>
+              <span class="process__icon">3</span>
+              Готовый отчёт отправляем Вам курьерской службой, либо вы можете его забрать в нашем офисе.
+            </li>
+          </ul>
+        </div>
+        <div class="process__item process__item-2 adaptive-box">
+          <img src="images/process/1.jpg" alt="image" class="adaptive-box__image">
+        </div>
+        <div class="process__item process__item-3">
+          <h2 class="process__title title title--size-sm t:600 color-thridary mb-40">После выполнения работ у Вас на руках будут:</h2>
+          <ul class="process__list">
+            <li>
+              <span class="process__icon">1</span>
+              Техническое заключение (определение категорий помещений);
+            </li>
+            <li>
+              <span class="process__icon">2</span>
+              Наклейки с наименованием категории;
+            </li>
+          </ul>
+        </div>
+        <div class="process__item process__item-4  adaptive-box">
+          <img src="images/process/2.jpg" alt="image" class="adaptive-box__image">
+        </div>
+      </div>
+
+    </div>
+</section>
+
+<section id="about" class="about wow fadeIn">
+  <div class="container">
+    <div class="about__inner">
+      <div class="about__info">
+        <h2 class="about__title title title--size-hg mb-24">ФЭС</h2>
+        <p>
+          Целью компании является не только коммерческая деятельность по продаже оборудования и оказанию услуг, но и
+          оказание
+          ощутимой помощи нашим клиентам в организации выполнения требований пожарной безопасности и прохождении
+          проверок пожарной
+          инспекции.
+        </p>
+        <p>
+          В основе деятельности компании заложен аналитический подход к обеспечению пожарной безопасности объектов -
+          проводятся
+          обследования объектов, анализ документации, консультации экспертов о реальной необходимости выполнения тех или
+          иных
+          мероприятий по пожарной безопасности.
+        </p>
+        <p class="mb-40">
+          Компания основана квалифицированными специалистами (экспертами) пожарной безопасности с большим опытом
+          практической
+          работы, в том числе в органах Государственного пожарного надзора.
+        </p>
+        <button type="button" class="btn about__link" data-fancybox-trigger="gallery">
+          Посмотреть лицензии
+        </button>
+        <div style="display: none;">
+          <a href="images/about/sert_1.gif" data-fancybox="gallery"></a>
+          <a href="images/about/sert_2.gif" data-fancybox="gallery"></a>
+          <a href="images/about/sert_3.gif" data-fancybox="gallery"></a>
+          <a href="images/about/sert_4.gif" data-fancybox="gallery"></a>
+          <a href="images/about/sert_5.gif" data-fancybox="gallery"></a>
+          <a href="images/about/sert_6.gif" data-fancybox="gallery"></a>
+          <a href="images/about/sert_7.gif" data-fancybox="gallery"></a>
+          <a href="images/about/sert_8.gif" data-fancybox="gallery"></a>
+          <a href="images/about/sert_9.gif" data-fancybox="gallery"></a>
+          <a href="images/about/sert_10.gif" data-fancybox="gallery"></a>
+          <a href="images/about/sert_11.gif" data-fancybox="gallery"></a>
+          <a href="images/about/sert_12.gif" data-fancybox="gallery"></a>
+          <a href="images/about/sert_13.gif" data-fancybox="gallery"></a>
+        </div>
+      </div>
+      <div class="about__items">
+        <div class="about__item-wrapper">
+          <div class="about__item">
+            <div class="font-thirdary t:size-25 t:size-35@lg t:600 lh-120 mb-16"><span data-round="" data-number="14"
+                data-duration="4000">14</span> лет</div>
+            <div class="t:size-16 t:zize-18@lg lh-144">Успешной работы в России и СНГ</div>
+          </div>
+        </div>
+        <div class="about__item-wrapper">
+          <div class="about__item">
+            <div class="font-thirdary t:size-25 t:size-35@lg t:600 lh-120 mb-16"><span data-round="" data-number="40"
+                data-duration="4000">40</span>+ специалистов</div>
+            <div class="t:size-16 t:zize-18@lg lh-144">В области пожарной безопасности</div>
+          </div>
+        </div>
+        <div class="about__item-wrapper">
+          <div class="about__item">
+            <div class="font-thirdary t:size-25 t:size-35@lg t:600 lh-120 mb-16">Более <span data-round="" data-number="9000"
+                data-duration="4000">9000</span></div>
+            <div class="t:size-16 t:zize-18@lg lh-144">Компаний уже выбрали нас</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="services" class="services wow fadeIn">
+    <div class="container">
+        <h2 class="title title--size-sm t:600 mb-40 color-thridary">Другие услуги ФЭС</h2>
+        <div class="services__items">
+          <div class="services__item active">
+            <span class="t:size-22 t:size-25@lg lh-100">Расчет путей эвакуации</span>
+            <button type="button" class="services__link link-decor" data-trigger="#modal-form, modalOpen">
+              Оставить заявку
+            </button>
+          </div>
+          <div class="services__item">
+            <span class="t:size-22 t:size-25@lg lh-100">Расчет количества огнетушителей</span>
+            <button type="button" class="services__link link-decor" data-trigger="#modal-form, modalOpen">
+              Оставить заявку
+            </button>
+          </div>
+          <div class="services__item">
+            <span class="t:size-22 t:size-25@lg lh-100">Комплект документов по ПБ для организации</span>
+            <button type="button" class="services__link link-decor" data-trigger="#modal-form, modalOpen">
+              Оставить заявку
+            </button>
+          </div>
+        </div>
+    </div>
+</section>
+
+<section id="partner" class="partner wow fadeIn">
+  <div class="container">
+    <h2 class="partner__title title title--size-sm t:center t:600 mb-20 mb-40@lg color-thridary">С нами работали</h2>
+    <div class="partner__slider-wrapper">
+      <div class="partner__slider swiper">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide">
+            <img src="images/partner/mgts.png" alt="mgts">
+          </div>
+          <div class="swiper-slide">
+            <img src="images/partner/mts.png" alt="mts">
+          </div>
+          <div class="swiper-slide">
+            <img src="images/partner/coca.png" alt="coca">
+          </div>
+          <div class="swiper-slide">
+            <img src="images/partner/post.png" alt="post">
+          </div>
+          <div class="swiper-slide">
+            <img src="images/partner/ol.png" alt="ol">
+          </div>
+          <div class="swiper-slide">
+            <img src="images/partner/mag.png" alt="mag">
+          </div>
+          <div class="swiper-slide">
+            <img src="images/partner/partner1.png" alt="1">
+          </div>
+          <div class="swiper-slide">
+            <img src="images/partner/partner2.png" alt="2">
+          </div>
+          <div class="swiper-slide">
+            <img src="images/partner/partner3.png" alt="3">
+          </div>
+          <div class="swiper-slide">
+            <img src="images/partner/partner4.png" alt="4">
+          </div>
+          <div class="swiper-slide">
+            <img src="images/partner/partner5.png" alt="5">
+          </div>
+          <div class="swiper-slide">
+            <img src="images/partner/partner6.png" alt="6">
+          </div>
+          <div class="swiper-slide">
+            <img src="images/partner/partner7.png" alt="7">
+          </div>
+          <div class="swiper-slide">
+            <img src="images/partner/partner8.png" alt="8">
+          </div>
+
+        </div>
+      </div>
+      <button class="swiper-button-prev t:size-30 t:size-40@lg">
+        <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon">
+          <g clip-path="url(#clip0_31_260)">
+            <path
+              d="M1.98717e-07 20.6641L16.6641 37.3281L26.6641 37.3281L13.3359 24L40 24L40 17.3281L13.3359 17.3281L26.6641 4L16.6641 4L1.98717e-07 20.6641Z"
+              fill="#00621A" />
+          </g>
+          <defs>
+            <clipPath id="clip0_31_260">
+              <rect width="40" height="40" fill="white" transform="translate(0 40) rotate(-90)" />
+            </clipPath>
+          </defs>
+        </svg>
+      </button>
+      <button class="swiper-button-next  t:size-30 t:size-40@lg">
+        <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon">
+          <g clip-path="url(#clip0_31_258)">
+            <path
+              d="M40 19.3359L23.3359 2.67187L13.3359 2.67187L26.6641 16L-5.82591e-07 16L-8.74228e-07 22.6719L26.6641 22.6719L13.3359 36L23.3359 36L40 19.3359Z"
+              fill="#00621A" />
+          </g>
+          <defs>
+            <clipPath id="clip0_31_258">
+              <rect width="40" height="40" fill="white" transform="translate(40) rotate(90)" />
+            </clipPath>
+          </defs>
+        </svg>
+      </button>
+    </div>
+  </div>
+</section>
+
+<section id="question-form" class="question-form wow fadeIn">
+    <div class="container">
+      <div class="question-form__items">
+        <div class="question-form__content">
+          <h3 class="title title--size-sm mb-16 t:600 ">
+            У вас остались вопросы о категорировании помещений
+          </h3>
+          <p class="t:size-16 t:size-20@lg lh-155 mb-40">
+            Задайте их нашему эксперту:
+          </p>
+
+          <div class="mw-430@lg">
+            <form action="">
+              <div class="mb-16">
+                <input class="form-field__input" placeholder="Ваше имя" type="text" name="yourname"
+                  required="">
+              </div>
+
+              <div class="mb-16">
+                <input class="form-field__input" placeholder="+7 999-888-77-66" type="tel" name="phone"
+                  required="">
+              </div>
+
+              <div class="mb-16">
+                <textarea class="form-field__textarea" name="message" placeholder="Опишите ваш вопрос"></textarea>
+              </div>
+
+              <div class="form-send w-200@lg mb-16">
+                <button type="submit" class="btn btn--theme-blur btn-primary btn-primary--xs">
+                  <span>Оставить заявку</span>
+                </button>
+              </div>
+            </form>
+            <p class="t:size-12 lh-135">Нажимая на кнопку «Оставить заявку» вы соглашаетесь с
+              <a href="#" class="color-green t:600 link--line">политикой конфиденциальности</a>
+            </p>
+          </div>
+
+        </div>
+        <div class="question-form__img">
+          <img src="images/question-form/img.png" alt="image">
+        </div>
+      </div>
+    </div>
+</section>
+
+<section id="map-content" class="map-content  wow fadeIn">
+    <div class="container">
+        <div class="map-content__items">
+          <div class="map-content__inner">
+            <h2 class="map__title title title--size-sm mb-30 t:600 color-thridary">Контакты для связи</h2>
+            <div class="map-content__item">
+              <span>Адрес</span>
+              <address>г. Москва, ул. Новопоселковая, д. 6, корп. 217, 2 этаж, офис 2Г</address>
+            </div>
+            <div class="map-content__item">
+              <span>Почта</span>
+              <a href="mailto:fes-plan@yandex.ru" class="link-decor">fes-plan@yandex.ru</a>
+            </div>
+            <div class="map-content__item">
+              <span>Телефон</span>
+              <a href="tel:+74952480368" class="link-decor">+7 (495) 248-03-68</a>
+            </div>
+            <div class="map-content__item">
+              <span>График работы</span>
+              <p>ПН-ПТ с 9:00 до 18:00 <span class="item t:size-18">СБ-ВС (по предварительной договоренности)</span></p>
+            </div>
+          </div>
+          <div id="map" class="map"></div>
+        </div>
+    </div>
+</section>
+
+    <footer class="footer wow fadeIn">
+  <div class="container-full mw-1660">
+    <div class="footer__inner">
+      <a href="/" class="logo">
+        <img src="images/global/logo.svg" alt="Logo">
+      </a>
+      <p class="footer__info">
+        Вся представленная на сайте информация носит <br> информационный характер и не является публичной
+        офертой
+      </p>
+      <div class="footer__copyright">
+        <a href="#">
+          Политика конфиденциальности
+        </a>
+        <span>Copyright 2023. ФЭС.рф</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  </div>
+
+  <div id="modal-form" class="modal modal-form modal--theme-primary" data-modal="form">
+    <div class="modal__wrapper">
+        <div class="modal__container">
+            <div class="modal__bg-close" data-modal-close=""></div>
+            <div class="container modal-form__box">
+                <div class="modal-form__wrapper">
+                    <button class="modal-form__close modal__close btn" data-modal-close="">
+                        <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon">
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M40.8442 13.9776C41.0295 13.7925 41.1766 13.5728 41.2769 13.3309C41.3773 13.089 41.429 12.8297 41.4292 12.5679C41.4293 12.306 41.3779 12.0467 41.2779 11.8047C41.1778 11.5627 41.031 11.3427 40.846 11.1574C40.6609 10.9722 40.4412 10.8251 40.1993 10.7248C39.9574 10.6244 39.6982 10.5727 39.4363 10.5725C39.1744 10.5724 38.9151 10.6238 38.6731 10.7238C38.4311 10.8239 38.2111 10.9707 38.0259 11.1557L26 23.1816L13.9776 11.1557C13.6034 10.7815 13.0959 10.5713 12.5667 10.5713C12.0374 10.5713 11.5299 10.7815 11.1557 11.1557C10.7815 11.5299 10.5713 12.0374 10.5713 12.5667C10.5713 13.0959 10.7815 13.6034 11.1557 13.9776L23.1816 26L11.1557 38.0224C10.9704 38.2077 10.8235 38.4276 10.7232 38.6697C10.6229 38.9118 10.5713 39.1713 10.5713 39.4333C10.5713 39.6954 10.6229 39.9548 10.7232 40.1969C10.8235 40.439 10.9704 40.659 11.1557 40.8442C11.5299 41.2185 12.0374 41.4287 12.5667 41.4287C12.8287 41.4287 13.0882 41.3771 13.3302 41.2768C13.5723 41.1765 13.7923 41.0295 13.9776 40.8442L26 28.8184L38.0259 40.8442C38.4001 41.218 38.9074 41.4278 39.4363 41.4275C39.9652 41.4271 40.4722 41.2167 40.846 40.8425C41.2197 40.4683 41.4295 39.961 41.4292 39.4321C41.4289 38.9032 41.2185 38.3961 40.8442 38.0224L28.8184 26L40.8442 13.9776Z"
+                            fill="#DA0000" />
+                        </svg>
+                    </button>
+                    <div class="modal-form__inner">
+
+                      <div class="modal-form__content">
+                        <p class="font-thirdary lh-104 t:600 t:size-18 t:size-24@lg mb-16">
+                          Нужно категорировать Ваш объект?
+                        </p>
+                        <h3 class="title title--size-lg mb-16 t:600 color-secondary">
+                          Оставьте заявку
+                        </h3>
+                        <p class="t:size-16 t:size-20@lg lh-135 mb-44">
+                          С Вами свяжется первый освободившийся специалист
+                        </p>
+
+                        <div class="mw-420">
+                          <form action="">
+                            <div class="mb-16">
+                              <input class="form-field__input form-field__input--mod" placeholder="Ваше имя" type="text" name="yourname" required="">
+                            </div>
+
+                            <div class="mb-24">
+                              <input class="form-field__input form-field__input--mod" placeholder="+7 999-888-77-66" type="tel" name="phone" required="">
+                            </div>
+
+                            <div class="form-send w-240@lg mb-16">
+                              <input type="submit" class="btn btn-primary btn--theme-primary btn-primary--sm" value="Оставить заявку">
+                            </div>
+                          </form>
+                          <p class="t:size-12 lh-135">Нажимая на кнопку «Оставить заявку» вы соглашаетесь с
+                            <a href="#" class="color-primary t:600 link--line">политикой конфиденциальности</a>
+                          </p>
+                        </div>
+
+                      </div>
+
+                      <div class="modal-form__img">
+                        <img src="images/global/form.jpg" alt="form-img">
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+  <script src="js/libraries/libraries.js"></script>
+  <script defer src="js/main/main.js"></script>
+</body>
+
+</html>

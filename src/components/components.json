@@ -1,0 +1,22 @@
+{
+    //"cursor": "cursor",
+    "scroll-offset": "scroll-offset",
+    "modal": "modal",
+    //"questions": "questions",
+    //"quiz": "quiz",
+    // "slider": {
+    //     "scripts:script": "core",
+    //     "styles:style": [
+    //         "slider",
+    //         "controller",
+    //         "scrollbar",
+    //         "pagination",
+    //         "btn-group",
+    //         "btn"
+    //     ]
+    // },
+    //"tab": "tab",
+    //"video": "video",
+    //"map-yandex": "map",
+}
+

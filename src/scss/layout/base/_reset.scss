@@ -1,0 +1,203 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+html {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    text-size-adjust: none;
+}
+iframe {
+    border: 0;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+    outline: none;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    background: transparent;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+input[type="number"]:hover,
+input[type="number"]:focus {
+    -moz-appearance: number-input;
+}
+button {
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+}
+input::placeholder,
+textarea::placeholder {
+    opacity: 1;
+    color: currentColor;
+}
+[tabindex="-1"]:focus {
+    outline: none !important;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: map-get($global-settings, "font");
+    line-height: normal;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: size(10);
+    color: currentColor;
+}
+p,
+ul,
+ol,
+dl,
+table,
+blockquote,
+pre,
+address,
+figure {
+    margin-top: 0;
+    margin-bottom: size(10);
+}
+ol ol,
+ul ul,
+ol ul,
+ul ol {
+    margin-bottom: 0;
+}
+li {
+    line-height: inherit;
+}
+address {
+    font-style: normal;
+}
+blockquote {
+    margin-right: 0;
+    margin-left: 0;
+    padding: 0;
+}
+b,
+strong {
+    font-weight: 700;
+}
+a {
+    transition-duration: $td;
+    color: currentColor;
+    background-color: transparent;
+}
+a,
+button,
+[role="button"],
+input,
+label,
+select,
+textarea {
+    touch-action: manipulation;
+    margin: 0;
+}
+a:not([href]) {
+    text-decoration: none;
+    color: inherit;
+
+    &:hover,
+    &:focus {
+        text-decoration: none;
+        color: inherit;
+    }
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+// Коррекция для кликабельных элементов с указанной ролью в iOS
+[role='button'] {
+    cursor: pointer;
+}
+// Мы любим Сафари (на самом деле, нет).
+[type='search']::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+button,
+input {
+    overflow: visible;
+}
+button,
+select {
+    text-transform: none;
+}
+select {
+    word-wrap: normal;
+}
+// Коррекция проблем стилизации для Safari
+button,
+html [type='button'],
+[type='reset'],
+[type='submit'] {
+    -webkit-appearance: button;
+}
+button::-moz-focus-inner,
+[type='button']::-moz-focus-inner,
+[type='reset']::-moz-focus-inner,
+[type='submit']::-moz-focus-inner {
+    padding: 0;
+    border-style: none;
+}
+
+// Коррекция для Mobile Safari (https://github.com/twbs/bootstrap/issues/11266)
+input[type='date'],
+input[type='time'],
+input[type='datetime-local'],
+input[type='month'] {
+    -webkit-appearance: listbox;
+}
+
+input[type='radio'],
+input[type='checkbox'] {
+    padding: 0;
+    box-sizing: border-box;
+}
+
+[hidden] {
+    display: none !important;
+}
+textarea {
+    overflow: auto;
+    resize: vertical;
+}
+
+
+
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+input {
+    outline: none;
+}
+
+a:focus, a:active, a:hover {
+	outline: 0
+}
+
+svg:not(:root) {
+	overflow: hidden
+}

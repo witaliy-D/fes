@@ -1,0 +1,53 @@
+{
+  "name": "starter",
+  "version": "1.0.0",
+  "description": "project",
+  "main": "gulpfile.js",
+  "type": "module",
+  "author": "Witaliy Duplin",
+  "license": "MIT",
+  "devDependencies": {
+    "@esbuild/win32-x64": "^0.21.5",
+    "autoprefixer": "^10.4.19",
+    "browser-sync": "^3.0.2",
+    "del": "^7.1.0",
+    "esbuild": "^0.21.5",
+    "gulp": "^5.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-file-include": "^2.3.0",
+    "gulp-imagemin": "^9.1.0",
+    "gulp-include": "^2.4.1",
+    "gulp-notify": "^4.0.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^10.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-svg-sprite": "^2.0.3",
+    "gulp-ttf2woff2": "^4.0.1",
+    "gulp-webp": "^5.0.0",
+    "imagemin-pngquant": "^10.0.0",
+    "imagemin-webp": "^8.0.0",
+    "json5": "^2.2.3",
+    "postcss": "^8.4.38",
+    "postcss-sort-media-queries": "^5.2.0",
+    "sass": "^1.77.4"
+  },
+  "scripts": {
+    "start": "gulp",
+    "prod": "gulp BUILD --build",
+    "font": "gulp FONT",
+    "libs": "gulp LIBS"
+  },
+  "dependencies": {
+    "@fancyapps/ui": "^5.0.28",
+    "animejs": "^3.2.2",
+    "gsap": "^3.12.2",
+    "jquery": "^3.7.1",
+    "jquery-nice-select": "^1.1.0",
+    "simplebar": "^6.2.5",
+    "svg4everybody": "^2.1.9",
+    "swiper": "^11.0.5",
+    "vanilla-lazyload": "^17.8.5",
+    "zurb-twentytwenty": "^0.1.1"
+  }
+}

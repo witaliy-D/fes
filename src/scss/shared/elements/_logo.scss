@@ -1,0 +1,17 @@
+.logo {
+  display: inline-block;
+  flex-shrink: 0;
+  line-height: 0;
+  //max-width: size(265);
+
+  // @include media(lg) {
+  //   max-width: inherit;
+  // }
+
+  img {
+    @include media(lg) {
+      width: size(265);
+      height: size(50);
+    }
+  }
+}

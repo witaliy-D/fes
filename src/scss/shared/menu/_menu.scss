@@ -1,0 +1,39 @@
+.menu {
+    --dp-block: block;
+    display: var(--dp-block);
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: size(32);
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        @include media(lg) {
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: size(15);
+        }
+
+        @include media(xl) {
+            gap: size(32);
+        }
+
+        &-item {
+            //margin-right: size(40);
+        }
+    }
+
+    &__link {
+        color: rgba(255, 255, 255, 0.5);
+        line-height: 1.75;
+        font-weight: 500;
+        white-space: nowrap;
+
+        &:hover {
+            color: rgba(255, 255, 255, 1);
+        }
+    }
+}

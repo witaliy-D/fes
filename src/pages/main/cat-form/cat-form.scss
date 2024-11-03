@@ -1,0 +1,48 @@
+.cat-form {
+  margin-bottom: size(30);
+
+  @include media(lg) {
+    margin-bottom: size(120);
+  }
+
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.15);
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: size(20);
+    background-image: url("../images/cat-form/bg.jpg");
+    background-size: cover;
+    background-blend-mode: multiply;
+    color: #fff;
+  }
+
+  &__img {
+    display: none;
+    line-height: 0;
+
+    @include media(lg) {
+      display: block;
+      padding: size(25) size(20) size(45) 0;
+    }
+  }
+
+  &__content {
+    padding: size(30) size(20);
+
+    @include media(lg) {
+      max-width: size(712);
+      padding: size(70) size(40);
+    }
+  }
+
+  &__inner form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: size(16);
+
+    @include media(lg) {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+}

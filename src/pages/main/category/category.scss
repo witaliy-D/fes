@@ -1,0 +1,32 @@
+.category {
+  margin-bottom: size(30);
+
+  @include media(lg) {
+    margin-bottom: size(120);
+  }
+
+  &__items {
+    display: grid;
+    gap: size(20);
+    grid-template-columns: 1fr;
+
+    @include media(md) {
+      grid-template-columns: 1fr 1fr;
+    }
+    @include media(lg) {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+
+  &__item {
+    padding: size(20);
+    border: 1px solid #dbdbdb;
+    border-radius: size(16);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.15);
+    background-color: #f5f5f5;
+
+    @include media(lg) {
+      padding: size(32) size(22);
+    }
+  }
+}

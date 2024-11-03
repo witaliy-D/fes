@@ -1,0 +1,92 @@
+.title {
+  --dp-block: block;
+  display: var(--dp-block);
+  font-weight: 400;
+  line-height: 1;
+  //color: #fff;
+  //font-family: $font;
+  //text-transform: uppercase;
+  word-wrap: break-word;
+  font-family: $font-thirdary;
+
+  //? theme
+  //&--white {
+  //    color: #fff;
+  //}
+
+  //* размеры
+  &--size {
+    &-sm {
+      font-size: size(24);
+
+      @include media(md) {
+        font-size: size(30);
+      }
+
+      @include media(lg) {
+        font-size: size(40);
+      }
+    }
+
+    &-md {
+      font-size: size(24);
+      @include media(lg) {
+        font-size: size(56);
+      }
+    }
+
+    &-lg {
+      font-size: size(30);
+
+      @include media(md) {
+        font-size: size(40);
+      }
+
+      @include media(lg) {
+        font-size: size(55);
+      }
+    }
+
+    &-xl {
+      font-size: size(30);
+      line-height: 0.9;
+
+      @include media(xs) {
+        font-size: size(35);
+      }
+
+      @include media(md) {
+        font-size: size(50);
+      }
+
+      @include media(lg) {
+        font-size: size(70);
+      }
+      @include media(xl) {
+        font-size: size(78);
+      }
+    }
+
+    &-hg {
+      font-size: size(35);
+
+      @include media(xs) {
+        font-size: size(40);
+      }
+
+      @include media(md) {
+        font-size: size(50);
+      }
+
+      @include media(lg) {
+        font-size: size(70);
+      }
+      @include media(xl) {
+        font-size: size(95);
+      }
+    }
+  }
+  //* стиль
+}
+
+// font-feature-settings: 'pnum' on, 'lnum' on;

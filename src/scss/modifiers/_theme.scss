@@ -1,0 +1,31 @@
+.color-primary {
+    color: $color-primary;
+}
+
+.color-secondary {
+    color: $color-primary-hover;
+}
+
+.color-thridary {
+  color: $color-secondary;
+}
+
+.color-green {
+  color: $color-thridary;
+}
+
+.font-secondary {
+    font-family: $font-secondary;
+}
+
+.font-thirdary {
+    font-family: $font-thirdary;
+}
+
+.color-white {
+    color: #fff;
+}
+
+.color-black {
+  color: #000;
+}

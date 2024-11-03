@@ -1,0 +1,74 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 999;
+  //display: none;
+  overflow: hidden;
+
+  //mod
+  // &._index {
+  //     z-index: 1999;
+  // }
+
+  &__wrapper {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  &__container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  //*
+  &__bg-close {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+  //*
+  // &__box {
+  //     margin: auto;
+  //     padding-bottom: size(100);
+  // }
+
+  &__close {
+    height: 1em;
+    width: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: size(30);
+
+    @include media(lg) {
+      font-size: size(50);
+    }
+    .icon {
+      font-size: size(30);
+
+      @include media(lg) {
+        font-size: size(50);
+      }
+    }
+  }
+}
+
+//*
+.modal--theme {
+  &-primary {
+    background: rgba(0, 0, 0, 0.5);
+  }
+  // &-secondary {
+  //   background-color: rgba(0, 0, 0, 0.5);
+  //   //backdrop-filter: blur(4px);
+  // }
+}

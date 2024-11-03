@@ -1,0 +1,20 @@
+.icon {
+    width: 1em;
+    height: 1em;
+    --dp-block: block;
+    display: var(--dp-block);
+    flex: 0 0 auto;
+    fill: currentColor;
+    transition: all $td 0s;
+    position: relative;
+    &--no-fill {
+        fill: none;
+    }
+    &--stroke {
+        stroke: currentColor;
+    }
+    &--only-stroke {
+        fill: none;
+        stroke: currentColor;
+    }
+}

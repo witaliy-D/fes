@@ -1,0 +1,30 @@
+@mixin font(
+                $name,
+                $url,
+                $weight,
+                $style,
+                $local: null,
+                $display: true
+            ) {
+    @font-face {
+        //*
+        font-family: '#{$name}';
+        //*
+        @if $local != null {
+            src:    local('#{$local}'),
+                    url('../fonts/#{$url}.woff2') format('woff2');
+
+        } @else {
+            src:    url('../fonts/#{$url}.woff2') format('woff2');
+        }
+
+        //*
+        font-weight: $weight;
+        font-style: $style;
+        //*
+        @if $display == true {
+            font-display:swap;
+        }
+        @content;
+    }
+}

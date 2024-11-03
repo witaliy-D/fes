@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <title>main</title>
+  @@include("../../template/base/favicon.html",{})
+  <link rel="stylesheet" type="text/css" href="css/dist/swiper-bundle.min.css">
+  <link rel="stylesheet" type="text/css" href="css/dist/fancybox.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<body data-scroll-offset>
+
+  <div class="wrapper">
+    @@include("../../template/header/header.html",{})
+    @@include("_include.g.html",{})
+    @@include("../../template/footer/footer.html",{})
+  </div>
+
+  @@include("../../template/modal/modal-form/modal-form.html",{})
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+  <script src="js/libraries/libraries.js"></script>
+  <script defer src="js/main/main.js"></script>
+</body>
+
+</html>

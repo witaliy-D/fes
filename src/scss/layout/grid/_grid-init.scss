@@ -1,0 +1,35 @@
+.grid {
+    --dp-grid: grid;
+    display: var(--dp-grid);
+    grid-template-columns: repeat(var(--grid-columns), calc(((100% + var(--grid-gap-x)) / (var(--grid-columns) / 1)) - var(--grid-gap-x)));
+    grid-gap: var(--grid-gap-y) var(--grid-gap-x);
+    @supports (gap: var(--gap)){
+        gap: var(--grid-gap-y) var(--grid-gap-x);
+    }
+}
+.grid > *{
+    --col: var(--grid-columns);
+    --row: 1;
+    --col-start: auto;
+    --row-start: auto;
+    grid-area: var(--row-start) /var(--col-start) / span var(--row) / span var(--col);
+}
+.grid[class*=" m:align-"],
+.grid[class^="m:align-"] {
+    align-items: var(--align);
+    justify-items: var(--justify);
+}
+//*
+.grid-flex {
+    --dp-flex: flex;
+    display: var(--dp-flex);
+    flex-wrap: wrap;
+    margin: 0 calc(var(--grid-gap-x) / -2) calc(var(--grid-gap-y) / -1);
+    &>* {
+        flex: 0 0 auto;
+        width: 100%;
+        max-width: calc(100% / (var(--grid-columns) / var(--col)));
+        padding: 0 calc(var(--grid-gap-x) / 2);
+        margin: 0 0 calc(var(--grid-gap-y));
+    }
+}

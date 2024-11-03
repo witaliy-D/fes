@@ -1,0 +1,70 @@
+.map-content {
+  margin-bottom: size(30);
+
+  @include media(lg) {
+    margin-bottom: size(80);
+  }
+
+  &__items {
+    display: flex;
+    gap: size(20);
+    flex-direction: column;
+
+    @include media(lg) {
+      flex-direction: row;
+      //height: min-content;
+    }
+  }
+
+  &__inner {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.15);
+    background: #f5f5f5;
+    border-radius: size(20);
+    padding: size(30) size(20);
+    border: 1px solid #dbdbdb;
+
+    @include media(lg) {
+      padding: size(88) size(50);
+      width: size(480);
+    }
+  }
+
+  &__item {
+    & > span {
+      line-height: size(22);
+      margin-bottom: size(8);
+      display: block;
+      color: #707070;
+    }
+
+    address,
+    a,
+    p {
+      font-size: size(17);
+      line-height: 100%;
+      font-family: $font-thirdary;
+      font-weight: 600;
+      margin-bottom: 0;
+
+      @include media(lg) {
+        font-size: size(25);
+      }
+    }
+
+    &:not(:last-child) {
+      margin-bottom: size(16);
+    }
+  }
+}
+
+.map {
+  height: size(350);
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.15);
+  border-radius: size(20);
+  overflow: hidden;
+
+  @include media(lg) {
+    height: size(572);
+    flex-grow: 1;
+  }
+}

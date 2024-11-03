@@ -1,0 +1,58 @@
+.question-form {
+  padding-top: size(30);
+  padding-bottom: size(30);
+  margin-bottom: size(30);
+  background-image: url("../images/question-form/bg.jpg");
+  background-size: cover;
+  background-position: center top;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: multiply;
+  color: #fff;
+
+  @include media(lg) {
+    padding-top: size(110);
+    padding-bottom: size(110);
+    margin-bottom: size(120);
+  }
+
+  &__items {
+    display: flex;
+    flex-direction: column;
+
+    @include media(lg) {
+      flex-direction: row;
+    }
+  }
+
+  &__content {
+    @include media(lg) {
+      width: 50%;
+    }
+  }
+
+  &__img {
+    line-height: 0;
+
+    @include media(md) {
+      width: 50%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    @include media(lg) {
+      width: 50%;
+    }
+
+    @include media(hg) {
+      position: relative;
+
+      img {
+        position: absolute;
+        max-width: calc(100% + 150px);
+        top: -30px;
+        left: -30px;
+        right: -120px;
+      }
+    }
+  }
+}

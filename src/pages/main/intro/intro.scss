@@ -1,0 +1,73 @@
+.intro {
+  min-height: 100vh;
+  background-image: url("../images/intro/bg.png");
+  background-size: cover;
+  background-position: 60% top;
+  padding-top: size(170);
+  margin-bottom: size(30);
+
+  @include media(xs) {
+    background-position: center top;
+  }
+
+  @include media(lg) {
+    margin-bottom: size(120);
+  }
+
+  &__inner {
+    padding-top: size(20);
+    padding-bottom: size(45);
+    color: #fff;
+
+    @include media(lg) {
+      padding-top: size(160);
+    }
+  }
+
+  &__btns {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: size(24);
+    margin-bottom: size(100);
+
+    @include media(xs) {
+      flex-direction: row;
+    }
+
+    @include media(lg) {
+      margin-bottom: size(190);
+    }
+  }
+
+  &__items {
+    display: grid;
+    gap: size(22);
+    grid-template-columns: 1fr 1fr;
+
+    @include media(md) {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    @include media(lg) {
+      padding: 0 size(16);
+      gap: size(52);
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    & > svg {
+      margin-bottom: size(16);
+    }
+  }
+
+  &__btn {
+    min-width: size(220);
+  }
+}

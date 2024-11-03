@@ -1,0 +1,12 @@
+// Контрольные точки для микса media()
+$media-breakpoints: (
+    'sm': 480,    //* Phablet
+    'xs': 640,    //*
+    //*
+    'md': 768,    //* Tablet
+    'lg': 992,   //* Laptop
+    //*
+    'xl': 1260,   //* xLaptop
+    'hg': 1600,   //* Desktop
+    'hd': 1920,   //* fullHD
+);

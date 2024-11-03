@@ -1,0 +1,16 @@
+{
+    "main": [
+        "intro",
+        "subject",
+        "cat-form",
+        "category",
+        "price",
+        "process",
+        "about",
+        "services",
+        "partner",
+        "question-form",
+        "map-content",
+    ],
+    //"thanks": "thanks"
+}

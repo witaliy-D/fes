@@ -1,0 +1,59 @@
+.btn-primary {
+  --dp-flex: flex;
+  display: var(--dp-flex);
+  align-items: center;
+  justify-content: center;
+  //*
+  font-weight: 400;
+  font-family: $font-thirdary;
+  //*
+  border-radius: size(5);
+
+  &._icon {
+    justify-content: space-between;
+  }
+
+  &--smm {
+    padding: size(12) size(27);
+    font-size: size(16);
+    line-height: size(20);
+  }
+
+  &--sm {
+    padding: size(13) size(40);
+    font-size: size(16);
+    line-height: size(20);
+
+    @include media(md) {
+      font-size: size(20);
+      line-height: size(24);
+    }
+  }
+
+  &--xs {
+    padding: size(13) size(10);
+    font-size: size(16);
+    line-height: size(20);
+
+    @include media(md) {
+      font-size: size(20);
+      line-height: size(24);
+    }
+  }
+
+
+  &--md {
+    padding: size(15) size(30);
+    font-size: size(16);
+    line-height: size(20);
+
+    @include media(md) {
+      font-size: size(20);
+      line-height: size(24);
+    }
+  }
+  &--lg {
+    min-height: size(70);
+    padding: size(10) size(30);
+  }
+}

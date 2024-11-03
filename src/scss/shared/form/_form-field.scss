@@ -1,0 +1,52 @@
+.form-field__input {
+  font-size: size(14);
+  line-height: size(22);
+  font-weight: 400;
+  border-radius: size(5);
+  --field-input-color: #000;
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  padding: size(12);
+  border: none;
+
+  @include media(md) {
+    font-size: size(16);
+    padding: size(14);
+  }
+
+  &--mod {
+    border: 1px solid #e9e9e9;
+    padding: size(11);
+
+    @include media(md) {
+      padding: size(13);
+    }
+  }
+}
+
+.form-field__input::placeholder {
+  opacity: 0.5;
+}
+
+.form-field__textarea {
+  font-size: size(14);
+  line-height: size(22);
+  font-weight: 400;
+  border-radius: size(5);
+  --field-input-color: #000;
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  padding: size(12);
+  border: none;
+  min-height: size(110);
+  resize: none;
+
+  @include media(md) {
+    font-size: size(16);
+    padding: size(14);
+  }
+}
+
+.form-field__textarea::placeholder {
+  opacity: 0.5;
+}

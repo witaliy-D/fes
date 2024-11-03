@@ -1,0 +1,15 @@
+//*
+.btn-circle {
+    --dp-flex: flex;
+    display: var(--dp-flex);
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    height: 1em;
+    width: 1em;
+    font-size: size(200);
+    border-radius: 50%;
+    & > span {
+        font-size: initial;
+    }
+}

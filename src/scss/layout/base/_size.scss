@@ -1,0 +1,85 @@
+:root {
+	//* переменные для работы функций size и адаптивного макета _size.scss
+	//--width-max-window: 480px;
+  --width-max-window: #{$layout-size-max + 'px'};
+	--width-min-window: #{$layout-size-min};
+	--width-min-window-px: #{$layout-size-min + 'px'};
+	//*
+	--min-value: 100;
+	--min-value-px: 100px;
+	--max-value: 100;
+	//*
+	//--layout-size: 480;
+    --layout-size: #{$layout-size-max};
+	//*
+
+
+	@include media(sm) {
+       // --width-max-window: 440px;
+
+
+		//--width-max-window: 640px;
+       /// --width-min-window: 480;
+        //--width-min-window-px: 480px;
+        //--layout-size: 640;
+	}
+	@include media(xs) {
+        //--width-max-window: 520px;
+
+
+		//--width-max-window: 768px;
+       // --width-min-window: 640;
+       // --width-min-window-px: 640px;
+       // --layout-size: 768;
+
+	}
+	@include media(md) {
+		//--width-max-window: 768px;
+		//--layout-size: #{$layout-size-max};
+
+       // --width-max-window: 992px;
+        //--width-min-window: 768;
+        //--width-min-window-px: 768px;
+        //--layout-size: 992;
+	}
+
+	//* bp lg = min-width 1024
+	@include media(lg) {
+		//* layout
+		//--width-max-window: 1260px;
+		//--width-min-window: 992;
+		//--width-min-window-px: 992px;
+		//--min-value: 80;
+		//--min-value-px: 80px;
+		//--max-value: 100;
+
+        //--layout-size: #{$layout-size-max};
+
+       // --layout-size: 1260;
+
+		//--min-value:81.5375;
+		//--min-value-px:81.5375px;
+	}
+	@include media(xl, min) {
+		//--min-value: 66;
+		//--min-value-px: 66px;
+        //--width-max-window: #{$layout-size-max + 'px'};
+        //--width-min-window: 1260;
+        //--width-min-window-px: 1260px;
+        //--min-value: 100;
+        //--min-value-px: 100px;
+        //--layout-size: #{$layout-size-max};
+	}
+	@include media(hg, min) {
+		//--min-value: 80;
+		//--min-value-px: 80px;
+	}
+
+	//* размер макета
+	@media (min-width: #{$layout-size-max + 'px'}) {
+		//--width-max-window: #{$layout-size-max + "px"};
+	}
+
+	//! Не трогать!
+	font-size: calc(var(--min-value-px) + (var(--max-value) - var(--min-value)) * ((var(--width-max-window) - var(--width-min-window-px)) / (var(--layout-size) - var(--width-min-window))));
+}

@@ -1,0 +1,50 @@
+.burger {
+  --dp-flex: flex;
+  display: var(--dp-flex);
+  flex-direction: column;
+  align-items: center;
+  width: 38px;
+  height: 26px;
+  cursor: pointer;
+  position: relative;
+  z-index: 900;
+  //color: currentColor;
+  color: #fff;
+  padding: 0;
+  border: 0;
+
+  span {
+    display: block;
+    transition: all 0.2s ease 0s;
+    position: absolute;
+    top: calc(50% - 1.5px);
+    right: 0;
+    width: 100%;
+    height: 3px;
+    border-radius: 1px;
+    background: rgba(255, 255, 255, 0.6);
+
+    &:nth-child(1) {
+      top: 0;
+    }
+
+    &:nth-child(3) {
+      top: auto;
+      bottom: 0%;
+    }
+  }
+
+  &.burger--close span {
+    transform: scale(0);
+
+    &:nth-child(1) {
+      transform: rotate(-45deg);
+      top: calc(50% - 1.5px);
+    }
+
+    &:nth-child(3) {
+      transform: rotate(45deg);
+      bottom: calc(50% - 1.5px);
+    }
+  }
+}

@@ -1,0 +1,19 @@
+body {
+    line-height: map-get($global-settings, 'line-height');
+    font-weight: map-get($global-settings, 'font-weight');
+    font-size: var(--body-font-size);
+    font-family: map-get($global-settings, 'font');
+    font-style: normal;
+    margin: 0;
+
+    color: map-get($global-settings, 'color');
+
+    @if (map-get($global-settings, 'bg')) {
+        background-color: map-get($global-settings, 'bg');
+    }
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}

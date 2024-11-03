@@ -1,0 +1,44 @@
+:root {
+	//*
+	--scroll-offset: 0px;
+	//* Анимации
+	--animation-left: -100%;
+	--animation-right: 100%;
+	--animation-top: -100%;
+	--animation-bottom: 100%;
+
+	//* grid
+	--columns: #{$columns};
+
+	//* end grid
+
+	//*
+	--adaptive-box: 100%;
+
+	//* Работа с шрифтами
+	@each $bp, $value in $font-size {
+		@if ($bp == "default") {
+			--body-font-size: #{$value};
+		} @else {
+			@include media($bp) {
+				--body-font-size: #{$value};
+			}
+		}
+	}
+	@each $bp, $type in $grid-gap {
+		@each $name, $value in $type {
+			@if ($bp == "default") {
+				--#{$name}: #{$value};
+			} @else {
+				@include media($bp) {
+					--#{$name}: #{$value};
+				}
+			}
+		}
+	}
+
+	//* bp lg = min-width 1024
+	@include media(lg) {
+
+	}
+}
